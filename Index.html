@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <title>Tarea VII</title>
+    <script src="Function.js"></script>
+</head>
+<body>
+    <header>
+
+        <h1>Tarea VII</h1>
+        
+    
+        <nav id="contenedornav" class="navbar navbar-expand-lg bg-danger-subtle border-danger-subtle rounded-3">       
+          </nav>
+    
+    </header>
+
+    <main>
+       <div class="eje1">
+        <h2>1. Solicite Su edad.</h2>
+        <br>
+        <input required="required" type="text" id="Edad" size="10" placeholder="Digite su edad">
+
+        <br><br>
+        <button onclick="ComprobarEdad()" class="btn btn-outline-info" >Verificar Edad</button>
+    </div>
+    <br><br>
+    <div class="eje2">
+        <h2>2.Digite su nota del 1 al 10</h2>
+        <br>
+        <input required="required" type="text" id="Nota" size="10" placeholder="Digite su nota">
+        <br><br>
+        <button onclick="VerificarNota()" class="btn btn-outline-info" >Verificar Nota</button>
+
+    </div>
+    <br><br>
+    <div class="eje3">
+        <h2>3.Realiza un script que pida cadenas de texto hasta que se pulse “cancelar”. Al salir con “cancelar” deben mostrarse todas las cadenas concatenadas con un guión</h2>
+        <br>
+        <button onclick="ConcatenarTexto()" class="btn btn-outline-info" >Obtener Información</button>
+        <br>
+        <p id="ResultadoCadena"></p>
+    </div>
+    <br><br>
+    <div class="eje4">
+        <h2>4.Realiza un script que pida números hasta que se pulse “cancelar”. Si no es un número deberá indicarse con un «alert» y seguir pidiendo. Al salir con “cancelar” deberá indicarse la suma total de los números introducidos</h2>
+        <br>
+        <button onclick="SumaNumeros()" class="btn btn-outline-info" >Obtener Información</button>
+        <br>
+        <p id="Total"></p>
+    </div>
+    <br><br>
+    <div class="eje5">
+        <h2>5.Calcular número  de cedula</h2>
+        <br>
+        <button onclick="CalcularCedula()" class="btn btn-outline-info" >Obtener Información</button>
+        <br>
+        <p id="resultadoCedula"></p>
+    </div>
+    <br><br>
+    <div class="eje6">
+        <h2>6. Digite el numero de Filas y Columnas.
+        </h2>
+        <br>
+        <article class="tablaMultiplicar">
+            <input type="text" id="Filas" size="10" placeholder="Digite las filas" required=required>
+            <input type="text" id="Columnas" size="10" placeholder="Digite las columnas" >
+            <br>
+            <br>
+            <button onclick="generarTabla()" type="button" class="btn btn-outline-info">Obtener Informacion</button>
+            <br>
+            <br>
+            
+            <div id="tablaDatos">
+            
+            </div>
+        </article>
+    </div>
+
+    <br><br>
+    <div class="eje7">
+        <h2>7.Digite el precio del producto son su respectivo IVA <br> (Si el producto no tiene iva se aplicara el 13% automatico)</h2>
+        <br>
+        <input required="required" type="text" id="Precio" size="10" placeholder="Digite el precio">
+        <input required="required" type="text" id="IVA" size="10" value="13">
+
+        <br><br>
+        <button onclick="CalcularPrecio()" class="btn btn-outline-info" >Calcular</button>
+        
+        <p id="TotalIVA"></p>
+    </div>
+    </main>
+</body>
+</html>
